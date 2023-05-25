@@ -1,0 +1,18 @@
+.temperature{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.stały{
+  background-color: black;
+  color: white;
+}
+.ciekły{
+  background-color: blue;
+  color: white;
+}
+.gazowy{
+  background-color: lightgray;
+  color: black;
+}

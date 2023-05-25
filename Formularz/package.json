@@ -1,0 +1,36 @@
+{
+  "name": "formularz",
+  "version": "1.0.0",
+  "description": "\"Aplikacja z formularzem\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "zad10": "nodemon index2.js",
+    "zad11": "nodemon index3.js",
+    "zad12": "nodemon index4.js",
+    "zad13": "nodemon zad13.js",
+    "zad14": "nodemon zad14.js",
+    "zad15": "nodemon zad15.js",
+    "zad16": "nodemon zad16.js",
+    "zad17": "nodemon zad17.js",
+    "zad18": "nodemon zad18.js",
+    "zad19": "nodemon zad19.js"
+  },
+  "keywords": [
+    "express",
+    "server"
+  ],
+  "author": "Mateusz Bartoszek\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "hbs": "^4.2.0",
+    "urldecode": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
