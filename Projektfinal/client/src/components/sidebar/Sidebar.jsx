@@ -8,8 +8,8 @@ export default function Sidebar() {
 
     useEffect(() => {
         const getCats = async () => {
-            const res = await axios.get("/categories")
-            setCats(res.data)
+            const res = await axios.get("/categories");
+            setCats(res.data);
         }
         getCats()
     }, [])
@@ -33,10 +33,10 @@ export default function Sidebar() {
             <div className="sidebarItem">
                 <span className="sidebarTitle">FOLLOW US</span>
                 <div className="sidebarSocial">
-                <a href="https://www.google.pl" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.google.pl" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-square-twitter"></i></a>
-            <a href="https://www.google.pl" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/mbartoszek/" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-linkedin"></i></a>
+                <a href="https://www.google.pl" className="link" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.google.pl" className="link" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.google.pl" className="link" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mbartoszek/" className="link" target="_blank" rel="noreferrer"><i className="sidebarIcon fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>

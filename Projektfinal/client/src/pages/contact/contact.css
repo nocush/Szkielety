@@ -1,0 +1,36 @@
+.contact{
+    display: flex;
+}
+
+.contactContainer{
+    flex: 9;
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contactText{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family:'Varela Round', sans-serif;
+    padding:30px;
+    
+}
+
+.contactText > i{
+    font-size: 50px;
+    padding-top: 15px;
+}
+
+.contactText > p{
+    font-size: 30px;
+    padding-left:30px;
+    padding-bottom: 10px;
+}
+
+.contactTitle{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+}

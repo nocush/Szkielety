@@ -74,20 +74,23 @@ router.get("/", async (req, res) => {
   const userId = req.query.userId;
   try {
     let posts;
+    //sort posts by date
+    // if (username) {
+
     if (username) {
-      posts = await Post.find({ username });
+      posts = await Post.find({ username }).sort({ createdAt: -1 });
     } else if (catName) {
       posts = await Post.find({
         categories: {
           $in: [catName],
         },
-      });
+      }).sort({ createdAt: -1 });
     } else if (userId) {
       posts = await Post.find({
         userId
-      });
+      }).sort({ createdAt: -1 });
     } else {
-      posts = await Post.find();
+      posts = await Post.find().sort({ createdAt: -1 });
     }
     res.status(200).json(posts);
   } catch (err) {
